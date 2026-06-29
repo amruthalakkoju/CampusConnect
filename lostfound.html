@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lost & Found | CampusConnect</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-graduation-cap"></i>
+CampusConnect
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="announcements.html">Announcements</a></li>
+<li><a href="teamfinder.html">Team Finder</a></li>
+<li><a href="lostfound.html">Lost & Found</a></li>
+</ul>
+
+<a href="login.html" class="login-btn">Login</a>
+
+</nav>
+
+</header>
+
+<section class="page-header">
+
+<h1>Lost & Found</h1>
+
+<p>
+Report or find lost belongings across the campus.
+</p>
+
+</section>
+
+<section class="search-section">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="itemSearch"
+placeholder="Search by item name...">
+
+</div>
+
+</section>
+<section class="report-section">
+
+<button id="openModal" class="primary-btn">
+    <i class="fa-solid fa-plus"></i>
+    Report Lost / Found Item
+</button>
+
+</section>
+
+<!-- Report Modal -->
+
+<div id="reportModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close">&times;</span>
+
+<h2>Report Item</h2>
+
+<form id="reportForm">
+
+<input type="text" id="itemName" placeholder="Item Name" required>
+
+<select id="itemStatus">
+
+<option value="Lost">Lost</option>
+
+<option value="Found">Found</option>
+
+</select>
+
+<input type="text" id="itemLocation" placeholder="Location" required>
+
+<textarea id="itemDescription"
+placeholder="Description"
+rows="4"></textarea>
+
+<button type="submit" class="primary-btn">
+
+Submit Report
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+<section class="lost-grid">
+
+<div class="lost-card">
+
+<div class="lost-icon">
+<i class="fa-solid fa-wallet"></i>
+</div>
+
+<h3>Black Wallet</h3>
+
+<p>Lost near the Library yesterday.</p>
+
+<span class="status lost">
+Lost
+</span>
+
+<button class="contact-btn">
+Contact Owner
+</button>
+
+</div>
+
+<div class="lost-card">
+
+<div class="lost-icon">
+<i class="fa-solid fa-id-card"></i>
+</div>
+
+<h3>College ID Card</h3>
+
+<p>Found near CSE Block.</p>
+
+<span class="status found">
+Found
+</span>
+
+<button class="contact-btn">
+Claim Item
+</button>
+
+</div>
+
+<div class="lost-card">
+
+<div class="lost-icon">
+<i class="fa-solid fa-calculator"></i>
+</div>
+
+<h3>Calculator</h3>
+
+<p>Found in Exam Hall.</p>
+
+<span class="status found">
+Found
+</span>
+
+<button class="contact-btn">
+Claim Item
+</button>
+
+</div>
+
+<div class="lost-card">
+
+<div class="lost-icon">
+<i class="fa-solid fa-key"></i>
+</div>
+
+<h3>Room Keys</h3>
+
+<p>Lost near Hostel Block.</p>
+
+<span class="status lost">
+Lost
+</span>
+
+<button class="contact-btn">
+Contact Owner
+</button>
+
+</div>
+
+<div class="lost-card">
+
+<div class="lost-icon">
+<i class="fa-solid fa-mobile-screen"></i>
+</div>
+
+<h3>Mobile Phone</h3>
+
+<p>Found in Cafeteria.</p>
+
+<span class="status found">
+Found
+</span>
+
+<button class="contact-btn">
+Claim Item
+</button>
+
+</div>
+
+<div class="lost-card">
+
+<div class="lost-icon">
+<i class="fa-solid fa-book"></i>
+</div>
+
+<h3>Notebook</h3>
+
+<p>Lost in Seminar Hall.</p>
+
+<span class="status lost">
+Lost
+</span>
+
+<button class="contact-btn">
+Contact Owner
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>CampusConnect</h2>
+
+<p>Connecting students with opportunities.</p>
+
+<p>© 2026 CampusConnect</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
